@@ -24,19 +24,67 @@ Agent AURA is a personalized AI assistant that:
 - Maintains AURA style and branding
 - Reduces manual effort
 
-## Workflow
+## workflow
+User
+ ↓
+Topic Enter
+ ↓
+Generate
+ ↓
+FastAPI
+ ↓
+LLM
+ ↓
+Poster + Poll + Content
+ ↓
+Frontend Display
+ ↓
+User Feedback
+ ↓
+Revision
+ ↓
+LLM
+ ↓
+Updated Output
 
-Topic Input
-      ↓
-Content Generation
-      ↓
-Poster Generation
-      ↓
-Question Generation
-      ↓
-Review
-      ↓
-Manual Posting
+## project structure 
+
+agent-aura-frontend/
+
+│
+├── app.py
+│
+├── pages/
+│   ├── 1_Generate.py
+│   ├── 2_History.py
+│   ├── 3_Campaigns.py
+│
+├── components/
+│   ├── navbar.py
+│   ├── poster_viewer.py
+│   ├── poll_viewer.py
+│   ├── feedback_form.py
+│   ├── content_viewer.py
+│
+├── services/
+│   ├── api.py
+│   ├── auth.py
+│
+├── utils/
+│   ├── session.py
+│   ├── logger.py
+│   ├── constants.py
+│
+├── assets/
+│   ├── logo.png
+│
+├── logs/
+│   └── app.log
+│
+├── requirements.txt
+│
+└── .env
+
 
 ## Future Scope
 
